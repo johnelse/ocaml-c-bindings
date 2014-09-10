@@ -1,0 +1,15 @@
+OASISFormat:               0.3
+Name:                      bindings
+Version:                   0.2.0
+Synopsis:                  Ocaml C bindings experiments
+Authors:                   John Else
+License:                   LGPL-2.1 with OCaml linking exception
+BuildTools:                ocamlbuild
+
+Executable main
+  CompiledObject:          best
+  Path:                    src
+  MainIs:                  main.ml
+  CSources:                foo_stubs.c
+  ByteOpt:                 -bin-annot
+  NativeOpt:               -bin-annot
